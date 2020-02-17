@@ -37,5 +37,5 @@
   @extend %button-container;
   @extend %button-item;
 
-  font-size: .6em;
+  font-size: $font-size-base * .8;
 }

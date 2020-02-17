@@ -1,5 +1,3 @@
-
-
 #welcome-section {
   @extend .container-fluid;
   @extend %green-gradient-bg;
@@ -49,6 +47,52 @@
       }
 
 
+    }
+  }
+}
+
+#experience-section {
+  @extend .container-fluid;
+
+  & > div {
+    @extend .row;
+
+    & > div:nth-child(1){
+      @extend .col-12;
+      @extend .col-md-6;
+
+      background-color: $gray-800;
+
+      h2 {
+        @extend .my-5;
+
+        text-align: center;
+        position: sticky;
+        top: 30vh;
+        color:$white;
+      }
+    }
+
+    & > div:nth-child(2){
+      @extend .col-12;
+      @extend .col-md-6;
+
+      & > div {
+        @extend .p-5;
+      }
+
+      h3 {
+        color:$gray-900;
+      }
+
+      h4 {
+        @extend .pb-3;
+        font-size: .8em;
+      }
+
+      p {
+        margin-bottom: 90px;
+      }
     }
   }
 }
