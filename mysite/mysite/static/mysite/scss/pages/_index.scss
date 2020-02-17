@@ -1,0 +1,46 @@
+#welcome-section {
+  @extend .container-fluid;
+  @extend %green-gradient-bg;
+
+  height: 80vh;
+  min-height: 360px;
+
+  & > div {
+    @extend .row;
+    @extend .h-100;
+
+
+    & > div:nth-child(1){
+      @extend .col-11;
+      @extend .d-flex;
+      @extend .justify-content-end;
+      @extend .pt-4;
+
+      #welcome-nav-container{
+        @extend .py-2;
+        @extend .px-3;
+        @extend .rounded;
+        @extend .shadow-sm;
+
+        background-color: $white;
+
+        i{
+          @extend .px-2;
+        }
+      }
+    }
+
+    & > div:nth-child(2){
+      @extend .offset-1;
+      @extend .col-10;
+      @extend .align-self-center;
+
+      position: relative;
+      top: 30vh;
+
+      h1 {
+        color:$white;
+      }
+    }
+  }
+}
