@@ -625,7 +625,7 @@ pre code {
   }
 }
 
-.container-fluid, #experience-section, #welcome-section, .container-xl, .container-lg, .container-md, .container-sm {
+.container-fluid, #about-section, #experience-section, #welcome-section, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -653,7 +653,7 @@ pre code {
     max-width: 1140px;
   }
 }
-.row, #experience-section > div, #welcome-section > div {
+.row, #about-section > div, #experience-section > div, #welcome-section > div {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -672,7 +672,7 @@ pre code {
 
 .col-xl,
 .col-xl-auto, .col-xl-12, .col-xl-11, .col-xl-10, .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg,
-.col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
+.col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, #about-section > div > div, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md,
 .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, #experience-section > div > div:nth-child(2), #experience-section > div > div:nth-child(1), .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm,
 .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col,
 .col-auto, .col-12, .col-11, #welcome-section > div > div:nth-child(1), .col-10, #welcome-section > div > div:nth-child(2), .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
@@ -769,7 +769,7 @@ pre code {
   max-width: 75%;
 }
 
-.col-10, #welcome-section > div > div:nth-child(2) {
+.col-10, #about-section > div > div, #welcome-section > div > div:nth-child(2) {
   flex: 0 0 83.3333333333%;
   max-width: 83.3333333333%;
 }
@@ -844,7 +844,7 @@ pre code {
   order: 12;
 }
 
-.offset-1, #welcome-section > div > div:nth-child(2) {
+.offset-1, #about-section > div > div, #welcome-section > div > div:nth-child(2) {
   margin-left: 8.3333333333%;
 }
 
@@ -1177,7 +1177,7 @@ pre code {
     max-width: 58.3333333333%;
   }
 
-  .col-md-8 {
+  .col-md-8, #about-section > div > div {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
@@ -1270,7 +1270,7 @@ pre code {
     margin-left: 8.3333333333%;
   }
 
-  .offset-md-2 {
+  .offset-md-2, #about-section > div > div {
     margin-left: 16.6666666667%;
   }
 
@@ -1378,7 +1378,7 @@ pre code {
     max-width: 41.6666666667%;
   }
 
-  .col-lg-6 {
+  .col-lg-6, #about-section > div > div {
     flex: 0 0 50%;
     max-width: 50%;
   }
@@ -1485,7 +1485,7 @@ pre code {
     margin-left: 16.6666666667%;
   }
 
-  .offset-lg-3 {
+  .offset-lg-3, #about-section > div > div {
     margin-left: 25%;
   }
 
@@ -4064,6 +4064,7 @@ input[type=button].btn-block {
 }
 .navbar .container,
 .navbar .container-fluid,
+.navbar #about-section,
 .navbar #experience-section,
 .navbar #welcome-section,
 .navbar .container-sm,
@@ -4151,6 +4152,7 @@ input[type=button].btn-block {
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
 .navbar-expand-sm > .container-fluid,
+.navbar-expand-sm > #about-section,
 .navbar-expand-sm > #experience-section,
 .navbar-expand-sm > #welcome-section,
 .navbar-expand-sm > .container-sm,
@@ -4178,6 +4180,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-sm > .container,
 .navbar-expand-sm > .container-fluid,
+.navbar-expand-sm > #about-section,
 .navbar-expand-sm > #experience-section,
 .navbar-expand-sm > #welcome-section,
 .navbar-expand-sm > .container-sm,
@@ -4197,6 +4200,7 @@ input[type=button].btn-block {
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
 .navbar-expand-md > .container-fluid,
+.navbar-expand-md > #about-section,
 .navbar-expand-md > #experience-section,
 .navbar-expand-md > #welcome-section,
 .navbar-expand-md > .container-sm,
@@ -4224,6 +4228,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-md > .container,
 .navbar-expand-md > .container-fluid,
+.navbar-expand-md > #about-section,
 .navbar-expand-md > #experience-section,
 .navbar-expand-md > #welcome-section,
 .navbar-expand-md > .container-sm,
@@ -4243,6 +4248,7 @@ input[type=button].btn-block {
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid,
+.navbar-expand-lg > #about-section,
 .navbar-expand-lg > #experience-section,
 .navbar-expand-lg > #welcome-section,
 .navbar-expand-lg > .container-sm,
@@ -4270,6 +4276,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid,
+.navbar-expand-lg > #about-section,
 .navbar-expand-lg > #experience-section,
 .navbar-expand-lg > #welcome-section,
 .navbar-expand-lg > .container-sm,
@@ -4289,6 +4296,7 @@ input[type=button].btn-block {
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
 .navbar-expand-xl > .container-fluid,
+.navbar-expand-xl > #about-section,
 .navbar-expand-xl > #experience-section,
 .navbar-expand-xl > #welcome-section,
 .navbar-expand-xl > .container-sm,
@@ -4316,6 +4324,7 @@ input[type=button].btn-block {
   }
   .navbar-expand-xl > .container,
 .navbar-expand-xl > .container-fluid,
+.navbar-expand-xl > #about-section,
 .navbar-expand-xl > #experience-section,
 .navbar-expand-xl > #welcome-section,
 .navbar-expand-xl > .container-sm,
@@ -4338,6 +4347,7 @@ input[type=button].btn-block {
 }
 .navbar-expand > .container,
 .navbar-expand > .container-fluid,
+.navbar-expand > #about-section,
 .navbar-expand > #experience-section,
 .navbar-expand > #welcome-section,
 .navbar-expand > .container-sm,
@@ -4359,6 +4369,7 @@ input[type=button].btn-block {
 }
 .navbar-expand > .container,
 .navbar-expand > .container-fluid,
+.navbar-expand > #about-section,
 .navbar-expand > #experience-section,
 .navbar-expand > #welcome-section,
 .navbar-expand > .container-sm,
@@ -7762,6 +7773,7 @@ button.bg-dark:focus {
 
 .pt-2,
 .py-2,
+#about-section > div > div > div:nth-child(1) h2,
 #welcome-section > div > div:nth-child(2) a,
 #welcome-section > div > div:nth-child(1) #welcome-nav-container {
   padding-top: 0.5rem !important;
@@ -7775,6 +7787,7 @@ button.bg-dark:focus {
 
 .pb-2,
 .py-2,
+#about-section > div > div > div:nth-child(1) h2,
 #welcome-section > div > div:nth-child(2) a,
 #welcome-section > div > div:nth-child(1) #welcome-nav-container {
   padding-bottom: 0.5rem !important;
@@ -7838,7 +7851,7 @@ button.bg-dark:focus {
   padding-left: 1.5rem !important;
 }
 
-.p-5, #experience-section > div > div:nth-child(2) > div {
+.p-5, #about-section > div > div > div:nth-child(2), #experience-section > div > div:nth-child(2) > div {
   padding: 3rem !important;
 }
 
@@ -10072,6 +10085,11 @@ h3 {
   background: linear-gradient(135deg, #ADD100 0%, #7B920A 100%);
 }
 
+#about-section > div > div > div:nth-child(1) {
+  background: #7B920A;
+  background: radial-gradient(circle, #ADD100 0%, #7B920A 100%);
+}
+
 #welcome-section > div > div:nth-child(2) a, #welcome-section > div > div:nth-child(1) #welcome-nav-container {
   background-color: #fff;
   color: #2e2e3a;
@@ -10118,6 +10136,24 @@ h3 {
 }
 #experience-section > div > div:nth-child(2) p {
   margin-bottom: 90px;
+}
+
+#about-section {
+  background-color: #2e2e3a;
+}
+#about-section > div > div > div:nth-child(1) {
+  border-radius: 0.25rem 0.25rem 0 0;
+  margin-top: 60px;
+}
+#about-section > div > div > div:nth-child(1) h2 {
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+}
+#about-section > div > div > div:nth-child(2) {
+  background-color: #fff;
+  border-radius: 0 0 0.25rem 0.25rem;
+  margin-bottom: 60px;
 }
 
 /*# sourceMappingURL=style.css.map */

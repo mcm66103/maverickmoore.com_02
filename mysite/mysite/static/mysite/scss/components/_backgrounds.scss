@@ -2,3 +2,8 @@
   background: $dark-green;
   background: linear-gradient(135deg, $light-green 0%, $dark-green 100%);
 }
+
+%green-gradient-radial-bg {
+  background: $dark-green;
+  background: radial-gradient(circle, $light-green 0%, $dark-green 100%); 
+}
