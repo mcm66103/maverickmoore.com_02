@@ -6435,7 +6435,7 @@ button.bg-dark:focus {
   border-radius: 0.2rem !important;
 }
 
-.rounded, #welcome-section > div > div:nth-child(1) #welcome-nav-container {
+.rounded, #welcome-section > div > div:nth-child(2) a, #welcome-section > div > div:nth-child(1) #welcome-nav-container {
   border-radius: 0.25rem !important;
 }
 
@@ -7564,11 +7564,11 @@ button.bg-dark:focus {
   white-space: normal;
 }
 
-.shadow-sm, #welcome-section > div > div:nth-child(1) #welcome-nav-container {
+.shadow-sm, #welcome-section > div > div:nth-child(2) a, #welcome-section > div > div:nth-child(1) #welcome-nav-container {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-.shadow {
+.shadow, #welcome-section > div > div:nth-child(2) a:hover, #welcome-section > div > div:nth-child(1) #welcome-nav-container:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -7694,7 +7694,7 @@ button.bg-dark:focus {
   margin-right: 0.25rem !important;
 }
 
-.mb-1,
+.mb-1, #welcome-section > div > div:nth-child(2) h1,
 .my-1 {
   margin-bottom: 0.25rem !important;
 }
@@ -7766,7 +7766,7 @@ button.bg-dark:focus {
   margin-right: 1.5rem !important;
 }
 
-.mb-4,
+.mb-4, #welcome-section > div > div:nth-child(2) p,
 .my-4 {
   margin-bottom: 1.5rem !important;
 }
@@ -7854,6 +7854,7 @@ button.bg-dark:focus {
 
 .pt-2,
 .py-2,
+#welcome-section > div > div:nth-child(2) a,
 #welcome-section > div > div:nth-child(1) #welcome-nav-container {
   padding-top: 0.5rem !important;
 }
@@ -7866,6 +7867,7 @@ button.bg-dark:focus {
 
 .pb-2,
 .py-2,
+#welcome-section > div > div:nth-child(2) a,
 #welcome-section > div > div:nth-child(1) #welcome-nav-container {
   padding-bottom: 0.5rem !important;
 }
@@ -7887,6 +7889,7 @@ button.bg-dark:focus {
 
 .pr-3,
 .px-3,
+#welcome-section > div > div:nth-child(2) a,
 #welcome-section > div > div:nth-child(1) #welcome-nav-container {
   padding-right: 1rem !important;
 }
@@ -7898,6 +7901,7 @@ button.bg-dark:focus {
 
 .pl-3,
 .px-3,
+#welcome-section > div > div:nth-child(2) a,
 #welcome-section > div > div:nth-child(1) #welcome-nav-container {
   padding-left: 1rem !important;
 }
@@ -10160,16 +10164,31 @@ h3 {
   background: linear-gradient(135deg, #ADD100 0%, #7B920A 100%);
 }
 
+#welcome-section > div > div:nth-child(2) a, #welcome-section > div > div:nth-child(1) #welcome-nav-container {
+  background-color: #fff;
+  color: #2e2e3a;
+  text-decoration: none;
+  font-weight: bold;
+}
+#welcome-section > div > div:nth-child(2) a a, #welcome-section > div > div:nth-child(1) #welcome-nav-container a {
+  color: #2e2e3a;
+}
+#welcome-section > div > div:nth-child(2) a:hover, #welcome-section > div > div:nth-child(1) #welcome-nav-container i:hover {
+  color: #7B920A;
+  text-decoration: none;
+}
+
+#welcome-section > div > div:nth-child(2) a {
+  font-size: 0.6em;
+}
+
 #welcome-section {
   height: 80vh;
   min-height: 360px;
 }
-#welcome-section > div > div:nth-child(1) #welcome-nav-container {
-  background-color: #fff;
-}
 #welcome-section > div > div:nth-child(2) {
   position: relative;
-  top: 20vh;
+  top: 25vh;
 }
 #welcome-section > div > div:nth-child(2) h1 {
   color: #fff;

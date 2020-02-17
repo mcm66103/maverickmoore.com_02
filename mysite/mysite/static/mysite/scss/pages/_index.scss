@@ -1,3 +1,5 @@
+
+
 #welcome-section {
   @extend .container-fluid;
   @extend %green-gradient-bg;
@@ -17,12 +19,7 @@
       @extend .pt-4;
 
       #welcome-nav-container{
-        @extend .py-2;
-        @extend .px-3;
-        @extend .rounded;
-        @extend .shadow-sm;
-
-        background-color: $white;
+        @extend %button-multi;
 
         i{
           @extend .px-2;
@@ -36,11 +33,22 @@
       @extend .align-self-center;
 
       position: relative;
-      top: 30vh;
+      top: 25vh;
 
       h1 {
-        color:$white;
+        @extend .mb-1;
+        color: $white;
       }
+
+      p {
+        @extend .mb-4;
+      }
+
+      a {
+        @extend %button-tiny;
+      }
+
+
     }
   }
 }
