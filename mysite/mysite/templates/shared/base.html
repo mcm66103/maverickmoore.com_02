@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Maverick Moore | Full Stack Software Developer | Atlanta, Ga.</title>
+
+    <meta name="author" content="Maverick Moore">
+    <meta name="description" content="Maverick Moore is an Atlata Django programmer and full stack software developer.">
+    <meta name="keywords" content="django software developer, atlanta python programmer">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mysite/css/style.css' %}">
+
+    {% block head %}
+    {% endblock %}
+
+  </head>
+  <body>
+
+    {% block content %}
+    {% endblock %}
+
+  </body>
+</html>
