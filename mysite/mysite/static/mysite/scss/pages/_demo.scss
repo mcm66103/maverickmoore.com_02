@@ -1,0 +1,23 @@
+#demo-section {
+  @extend .container-fluid;
+
+  background-color: $gray-800;
+  min-height: 100vh;
+
+  & > div {
+    @extend .container;
+
+    & > div {
+      @extend .row;
+
+      & > div {
+        @extend .col-12;
+
+        h1 {
+          @extend .pt-5;
+          color: $white;
+        }
+      }
+    }
+  }
+}
