@@ -5,11 +5,23 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid" id="demo-section">
+<div class="container-fluid pb-5" id="demo-section">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h1>Demos</h1>
+        <h2>Kinetic Ink Photo Contests</h2>
+        <p>The purpose of this project was to engage the photography community with
+           a photography contest platform. Another version where users can host there own contests
+           is under development.</p>
+         <p>This website uses Django Rest Framework for the API and React for the front-end.</p>
+         <p>Across multiple contests, Kinetic Ink has received thousands of contest entries.</p>
+         <img src="{% static 'mysite/images/photo-contest-demo.gif' %}" /><br>
+         <p><a href="https://contest.kinetic.ink">Visit the Photo Contest</a></p>
+        <h2>National Home Services</h2>
+        <p>This was a simple database driven website powered by Django.
+        I created it to explore the question, can a single database driven website generate
+        leads for multiple types of home service businesses?</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Ok7IcXYbvwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>

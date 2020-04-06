@@ -7866,7 +7866,7 @@ button.bg-dark:focus {
   padding: 3rem !important;
 }
 
-.pt-5, #demo-section > div > div > div h1,
+.pt-5, #demo-section > div > div > div h2, #demo-section > div > div > div h1,
 .py-5 {
   padding-top: 3rem !important;
 }
@@ -10172,6 +10172,12 @@ h3 {
   min-height: 100vh;
 }
 #demo-section > div > div > div h1 {
+  color: #fff;
+}
+#demo-section > div > div > div h2 {
+  color: #fff;
+}
+#demo-section > div > div > div p {
   color: #fff;
 }
 

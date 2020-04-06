@@ -17,6 +17,15 @@
           @extend .pt-5;
           color: $white;
         }
+
+        h2 {
+          @extend .pt-5;
+          color: $white;
+        }
+
+        p {
+          color:$white;
+        }
       }
     }
   }
