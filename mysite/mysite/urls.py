@@ -20,6 +20,7 @@ from mysite import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('', views.index),
-    path('demo/', views.demo)
+    path('', views.index, name='index'),
+    path('demo/', views.demo),
+    path('contact-me/', views.contact_me, name='contact_me'),
 ]

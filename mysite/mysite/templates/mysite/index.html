@@ -6,6 +6,14 @@
 
 {% block content %}
 
+{% if messages %}
+  {% for message in messages %}
+    <div {% if message.tags %} class="alert alert-{{ message.tags }}" {% endif %} role="alert" style="position:absolute;width:80%;margin-left:10%;top:90px;">
+      {{ message }}
+    </div>
+  {% endfor %}
+{% endif %}
+
 <div id="welcome-section">
   <div class="d-block">
     <div>
@@ -16,9 +24,9 @@
       </div>
     </div>
     <div>
-      <h1>Maverick Moore | Full-Stack Developer</h1>
+      <h1>Maverick Moore | Software Engineer</h1>
       <p><i class="fas fa-globe-americas"></i> Atlanta, Ga.</p>
-      <a target="_blank" href="/demo">View My Sample Work <i class="fas fa-laptop-code"></i></a>
+      <a type="button" class="btn" id="contact-me-button" data-toggle="modal" data-target="#contact-me-modal">Contact Me <i class="far fa-comments"></i></a>
     </div>
   </div>
 </div>
@@ -75,4 +83,27 @@
   </div>
 </div>
 
+<div class="modal fade" id="contact-me-modal" tabindex="-1" role="dialog" aria-labelledby="contact-me-modal-labels" aria-hidden="true">
+  <form style="" method="post" action="{% url 'contact_me' %}" class="d-block">{% csrf_token %}
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Send a Message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+          <div style="max-width:80%;" method="post" action="{% url 'contact_me' %}">{% csrf_token %}
+            {{ form.as_p }}
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><input class="btn btn-primary" type="submit" value="send"></input>
+
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
 {% endblock %}

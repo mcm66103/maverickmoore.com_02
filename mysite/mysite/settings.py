@@ -26,6 +26,10 @@ environ.Env.read_env()
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
+TWILIO_SID = env('TWILIO_SID')
+TWILIO_AUTH = env('TWILIO_AUTH')
+TWILIO_PHONE = env('TWILIO_PHONE')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
