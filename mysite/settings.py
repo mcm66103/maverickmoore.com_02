@@ -37,7 +37,7 @@ DEBUG = env('DEBUG')
 ALLOWED_HOSTS = [
     'www.maverickmoore.com',
     '127.0.0.1',
-    'https://maverickmoore.herokuapp.com/',
+    'maverickmoore.herokuapp.com',
 ]
 
 
