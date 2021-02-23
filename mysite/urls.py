@@ -23,7 +23,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('demo/', views.demo),
     path('contact-me/', views.contact_me, name='contact_me'),
-    path('download-resume/', views.download_resume, name='download_resume')
 ]
 
 urlpatterns += [

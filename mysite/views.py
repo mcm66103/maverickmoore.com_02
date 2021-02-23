@@ -56,44 +56,7 @@ def contact_me(request):
 
 
     return redirect(reverse_lazy('index'))
-
-def download_resume(request):
-
-    if request.method == 'POST':
-
-        form = DownloadResumeForm(request.POST)
-        if form.is_valid():
-
-            try:
-                message = client.messages.create(
-                    body=f"{ form.cleaned_data['phone'] }/{ form.cleaned_data['email'] } downloaded your resume",
-                    from_=settings.TWILIO_PHONE,
-                    to='+16467700783'
-                )
-
-                resume_file_path = os.path.join(settings.BASE_DIR, 'mysite/static/mysite/resume/20201021_resume_maverick_moore.docx')
-
-                with open(resume_file_path, 'rb') as f:
-                    file_data = f.read()
-
-                   # sending response
-                response = HttpResponse(file_data, content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
-                response['Content-Disposition'] = 'attachment; filename="maverick_moore_resume.docx"'
-
-                return response
-
-            except Exception as e:
-                messages.add_message(request, messages.ERROR, 'There was an error', extra_tags="danger")
-                pass
-
-        else:
-            if form.errors['captcha'] != None:
-                messages.add_message(request, messages.ERROR, form.errors['captcha'][0], extra_tags="danger")
-            else:
-                messages.add_message(request, messages.ERROR, 'There was an error.', extra_tags="danger")
-
-    return redirect(reverse_lazy('index'))
-
+    
 
 class ContactMeForm(forms.Form):
     email = forms.EmailField()
